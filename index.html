@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Dash</title>
+    <link rel="icon" href="YOUR_IMAGE_URL_HERE" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://images.pexels.com/photos/772772/pexels-photo-772772.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Permanent Marker', cursive;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+        }
+
+        .paw-print {
+            width: 40px;
+            height: 40px;
+            background: url('https://cdn-icons-png.flaticon.com/512/616/616554.png') no-repeat center;
+            background-size: contain;
+            animation: bounce 1s infinite alternate;
+        }
+
+        .paw-left {
+            animation-delay: 0.2s;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        .content {
+            font-size: 1.5rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <span class="paw-print"></span>
+        DogDash
+        <span class="paw-print paw-left"></span>
+    </h1>
+    <div class="content">
+        <p>Welcome to DogDash! The ultimate fun place for dog lovers.</p>
+    </div>
+</body>
+</html>
